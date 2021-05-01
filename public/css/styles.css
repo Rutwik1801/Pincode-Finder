@@ -1,0 +1,105 @@
+
+@media only screen and (max-width: 2000px){
+    .result-div{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .pin-main--div{
+        padding: 20px 40px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .pin-main--div{
+        padding: 20px;
+        width: 90%;
+    }
+    .result-div{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 750px){
+    .result-div{
+        grid-template-columns:1fr;
+    }
+}
+
+html,*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:black;
+  
+}
+
+.pin-main--div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.9);
+    transition: box-shadow 0.4s;
+}
+.pin-main--div:hover{
+    box-shadow: 0 10px 40px rgba(255,255,255,0.6);
+}
+h1{
+    letter-spacing: 1px;
+}
+
+input{
+    width:100%;
+    display: block;
+    padding-top: 8px;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid #777;
+    margin-bottom: 20px;
+}
+input::placeholder{
+    color: black;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.btn-main{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: none;
+    border: 1px solid black;
+    padding: 10px 30px;
+    transition: all 0.2s ease-in;
+}
+.btn-main:hover{
+    background-color: black;
+    color: white;
+}
+
+.good{
+    color: blue;
+}
+
+.result-div{
+    padding: 20px;
+    display: grid;
+    grid-gap: 2rem;
+    background-color: black;
+}
+.individual-box{
+    letter-spacing: 2px;
+    text-align: center;
+    /* margin: 20px; */
+    padding: 20px 10px;
+    background-color:rgba(255,255,255,0.9) ;
+    border-radius: 5px;
+    transition: box-shadow 0.4s;
+}
+.individual-box:hover{
+    box-shadow: 0 10px 40px rgba(255,255,255,0.6);
+}
+
+.extra-font{
+    font-size: 20px;
+}
+.extra-font:hover{
+    background-color: grey;
+}
